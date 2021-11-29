@@ -1,0 +1,92 @@
+body {
+  background-color: rgb(27, 27, 27);
+  color: rgb(255, 255, 255);
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+}
+
+.navbar-dark .navbar-brand {
+  color: rgb(0, 119, 255);
+}
+
+/* -------------------------------------------------------------------------------------------- */
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.schedule-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 25px;
+}
+
+.single-term-schedule {
+  padding: 20px;
+  background-color: #383838;
+  border-radius: 25px;
+}
+
+.single-term-schedule h3 {
+  text-align: center;
+}
+
+.course-item:nth-child(odd) {
+  background-color: rgb(0, 95, 158);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  font-weight: 700;
+}
+.course-item:nth-child(even) {
+  background-color: rgb(0, 182, 106);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  font-weight: 700;
+}
+
+.course-item:nth-child(2) {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.course-item:last-child {
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.company-name {
+  display: inline-block;
+  font-size: medium;
+}
